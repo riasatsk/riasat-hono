@@ -4,6 +4,6 @@ import { auth } from "./routes/auth.ts";
 const app = new Hono();
 
 app.get("/", (c: Context) => c.text("Welcome to Riasat API!"));
-app.use(auth);
+app.use('/auth',auth);
 
 Deno.serve(app.fetch);
