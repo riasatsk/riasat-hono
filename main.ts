@@ -1,9 +1,10 @@
 import { Hono } from "https://deno.land/x/hono@v3.4.1/mod.ts";
+
 import data from "./data.json" assert { type: "json" };
 
 const app = new Hono();
 
-app.get("/", (c) => c.text("Welcome to dinosaur API!"));
+app.get("/", (c) => c.text("Welcome to Riasat API!"));
 
 app.get("/api/", (c) => c.json(data));
 
