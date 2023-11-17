@@ -12,5 +12,5 @@ auth.post("/signup", async (c: Context) => {
   const name = body.name;
   const password = body.password;
   user.push({ name: name, password: password });
-  c.text(JSON.stringify(user));
+  c.text(name,password);
 });
