@@ -1,4 +1,4 @@
-import express from 'node:express';
+import express from 'npm:express';
 
 const app = express();
 app.use((req,res)=>{
